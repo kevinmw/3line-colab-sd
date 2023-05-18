@@ -266,7 +266,7 @@ function run {
     #Prepare for running
     sed_for run $BASEPATH
 
-    cd $BASEPATH && python launch.py --listen --xformers --opt-sdp-attention --enable-insecure-extension-access --theme dark --gradio-queue --clip-models-path $BASEPATH/models/CLIP --multiple
+    cd $BASEPATH && python launch.py --listen --xformers --opt-sdp-attention --enable-insecure-extension-access --theme dark --gradio-queue --clip-models-path $BASEPATH/models/CLIP --ckpt-dir /content/fused-models --lora-dir /content/fused-lora --multiple
 }
 
 BASEPATH=/content/drive/MyDrive/SD
